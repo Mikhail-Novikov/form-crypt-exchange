@@ -1,16 +1,30 @@
-import React from 'react';
-import { Typography, Container, Box } from '@mui/material';
+import { Container, Box, ThemeProvider, Typography } from '@mui/material';
+import { theme } from './theme';
 import './App.css';
 
 function App() {
   return (
-    <Container maxWidth="sm">
-      <Box sx={{ my: 4 }}>
-        <Typography variant="h2" component="h1" gutterBottom>
-          HelloWorld
-        </Typography>
+    <ThemeProvider theme={theme}>
+      <Box className="app-root">
+        <Container maxWidth="sm" className="app-container">
+          {/* Header */}
+          <Typography className="app-title">
+            Способ вывода
+          </Typography>
+
+          {/* Tabs */}
+
+          {/* Amount Input Section */}
+
+          {/* Save Requisites Checkbox */}
+
+          {/* Requisite Type Selection */}
+
+          {/* Requisites Items */}
+
+        </Container>
       </Box>
-    </Container>
+    </ThemeProvider>
   );
 }
 
