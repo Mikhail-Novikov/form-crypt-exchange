@@ -10,30 +10,6 @@ body {
   color: #333333;
 }
 
-/* Responsive Typography */
-@media (max-width: 480px) {
-  body {
-    font-size: 14px;
-  }
-}
-
-/* Input styling */
-input[type="number"] {
-  font-family: inherit;
-  font-size: inherit;
-  color: inherit;
-}
-
-input[type="number"]::-webkit-outer-spin-button,
-input[type="number"]::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
-input[type="number"] {
-  -moz-appearance: textfield;
-}
-
 /* Scrollbar styling */
 ::-webkit-scrollbar {
   width: 8px;
@@ -53,7 +29,10 @@ input[type="number"] {
 }
 
 .app-root {
-  background-color: #FFFFFF;
+  max-width: 600px;
+  margin: 12px auto;
+  background-color: #EFEFEF;
+  border-radius: 4px;
   min-height: 100vh;
   padding: 16px 0;
 }
