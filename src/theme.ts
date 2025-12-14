@@ -133,22 +133,18 @@ export const theme: ThemeOptions = createTheme({
           marginLeft: 0,
           "& .MuiFormControlLabel-label": {
             fontSize: "16px",
-            color: "#BABABA",
+            color: "#333333",
             fontWeight: 400,
             marginBottom: 0,
-            marginRight: "12px",
+            marginLeft: "12px",
             userSelect: "none",
+            "@media (max-width: 480px)": { fontSize: "12px", },
           },
         },
         label: {
           fontSize: "14px",
           color: "#000000",
           fontWeight: 500,
-          "&.requisite-label": {
-            fontSize: "14px",
-            color: "#000000",
-            fontWeight: 500,
-          },
         },
       },
     },
@@ -176,6 +172,12 @@ export const theme: ThemeOptions = createTheme({
             width: "24px",
             height: "24px",
             color: "#FFD700",
+            marginLeft: "12px",
+          },
+          "& .MuiSvgIcon-root": {
+            color: "rgba(0, 0, 0, 0.6)",
+            width: "28px",
+            height: "28px",
           },
           "&.Mui-checked": {
             backgroundColor: "#FFD700",
@@ -183,8 +185,8 @@ export const theme: ThemeOptions = createTheme({
             padding: 4,
             "& .MuiSvgIcon-root": {
               color: "#000000",
-              width: "18px",
-              height: "18px",
+              width: "16px",
+              height: "16px",
             },
           },
         },
@@ -193,7 +195,7 @@ export const theme: ThemeOptions = createTheme({
     MuiRadio: {
       styleOverrides: {
         root: {
-          padding: "0px 16px",
+          padding: 0,
           "&.Mui-checked": {
             color: "#000000",
           },
@@ -242,6 +244,7 @@ export const theme: ThemeOptions = createTheme({
             display: "flex",
             alignItems: "center",
             justifyContent: "center",
+            boxShadow: "none",
           },
           "&.amount-input-box": {
             display: "flex",

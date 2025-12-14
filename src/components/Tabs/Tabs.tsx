@@ -17,7 +17,7 @@ export const Tabs: React.FC<TabsProps> = ({
   activeTab,
   onTabChange,
 }): JSX.Element => (
-  <Box>
+  <Box sx={{ display: "flex", flexWrap: "nowrap" }}>
     {tabs.map((tab) => (
       <Button
         key={tab.value}

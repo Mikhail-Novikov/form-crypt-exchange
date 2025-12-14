@@ -18,17 +18,17 @@ export const RequisiteType = (): JSX.Element => {
         backgroundColor: "#FFFFFF",
         gap: 2,
         borderRadius: "8px",
-        padding: "16px 0 0",
+        padding: "12px 0 0",
       }}>
       <RadioGroup
+        sx={{ paddingLeft: "18px" }}
         value={selectedValue}
         onChange={(e) => setSelectedValue(e.target.value)}>
         <Box
           sx={{
             display: "flex",
-            gap: 1,
-            "@media (max-width: 480px)": { flexWrap: "wrap" },
-            "@media (min-width: 480px)": { flexWrap: "nowrap" },
+            "@media (max-width: 480px)": { flexWrap: "wrap", gap: 2, },
+            "@media (min-width: 480px)": { flexWrap: "nowrap", gap: 3, },
           }}>
           <FormControlLabel
             value="card"
