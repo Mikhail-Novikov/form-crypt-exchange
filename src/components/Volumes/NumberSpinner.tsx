@@ -11,7 +11,7 @@ import { formatNumber } from "./utils";
  */
 const NumberSpinner = ({ label, value }: NumberSpinnerProps): JSX.Element => (
   <Paper className="amount-input-box" elevation={0}>
-    <IconButton size="small">
+    <IconButton size="small" tabIndex={-1}>
       <RemoveIcon className="icon-rounded" />
     </IconButton>
     <TextField
@@ -22,7 +22,7 @@ const NumberSpinner = ({ label, value }: NumberSpinnerProps): JSX.Element => (
         readOnly: true,
       }}
     />
-    <IconButton size="small">
+    <IconButton size="small" tabIndex={-1}>
       <AddIcon className="icon-rounded" />
     </IconButton>
   </Paper>
